@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>ElevenLabs Conversational AI Demo</title>
+    <style>
+        /* Stili CSS */
+        .container {
+            text-align: center;
+        }
+        .status-container {
+            margin: 20px 0;
+        }
+        .status, .speaking-status {
+            display: inline-block;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .status.connected {
+            color: green;
+        }
+        .speaking-status.speaking {
+            color: blue;
+        }
+        .status-image {
+            max-width: 100%;
+            height: auto;
+        }
+        #birkengymSeller {
+            display: none;
+            max-width: 100%;
+            height: auto;
+        }
+        #videoContainer {
+            display: none;
+        }
+        #videoStream {
+            width: 640px;
+            height: 480px;
+            background-color: black;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        /* Stile per il messaggio di congratulazioni */
+        #congratulationsMessage {
+            display: none;
+            font-size: 48px;
+            color: green;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="status-container">
+            <div id="connectionStatus" class="status">Disconnected</div>
+            <div id="speakingStatus" class="speaking-status">Agent Silent</div>
+        </div>
+        <img id="personImage" src="/static/birkengym_shop.jpg" alt="Status Image" class="status-image">
+        <img id="birkengymSeller" src="/static/birkengym_seller.jpg" alt="Seller Image">
+        <!-- Div per il video stream -->
+        <div id="videoContainer">
+            <img id="videoStream" alt="Video Stream">
+        </div>
+        <!-- Messaggio di congratulazioni -->
+        <div id="congratulationsMessage">Congratulations!</div>
+        <div class="controls">
+            <button id="startButton" class="button">Start Conversation</button>
+            <button id="endButton" class="button" disabled>End Conversation</button>
+        </div>
+    </div>
+    <script src="/static/bundle.js"></script>
+</body>
+</html>
