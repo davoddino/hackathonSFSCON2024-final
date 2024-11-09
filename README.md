@@ -6,6 +6,7 @@ Welcome to the **Interactive Storefronts Project** repository! 🎉 This project
 
 Transform traditional storefronts into interactive, intelligent displays that captivate and engage people as they walk by. Using real-time camera detection, conversational AI, and gesture-based mini-games, the project creates an immersive, memorable experience that blurs the line between the physical and digital worlds.
 
+
 ## 🛠️ Technologies Used
 
 - **MediaPipe**: Powers gesture recognition, enabling passersby to interact with the display using hand movements.
